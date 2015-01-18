@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        table
+        {
+            width: 150px;
+            border: 1px dotted Green;
+        }
+        .red
+        {
+            border: 1px dotted Red;
+        }
+        #t1
+        {
+            width: 85px;
+        }
+        .style1
+        {
+            border: 1px dotted Red;
+            width: 75px;
+        }
+        .style2
+        {
+            border: 1px dotted Red;
+            width: 155px;
+        }
+        .style3
+        {
+            border: 1px dotted Red;
+            width: 140px;
+        }
+    </style>
+    <script type="text/javascript" src="lib.js"></script>
+</head>
+<body>
+
+<div style="float:left;">
+    <table id="Table" style="width:564px;">
+        <tr>
+        <td class="style1">ID</td>
+        <td class="style2">Name</td>
+        <td class="style2">Email</td>
+        <td class="style3">Image</td>
+        </tr>
+    </table>
+
+    <br />
+
+    <input type="text" id="t1"/>
+    <input type="text" id="t2" style="width: 155px" />
+    <input type="text" id="t3" style="width: 143px" />
+    <input style="height: 20px" id="t4" type="file" accept=".png,.jpg"/>
+
+    <br />
+    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <button value="Додати запис" onclick="Press(Table,t1,t2,t3,t4)">
+    Додати запис
+    </button>
+</div>
+
+<div style="float:right; width: 400px; height: 200px; border-color:Aqua; border-style:groove";>
+    <div style="float:left;">
+        <img id="person_image" alt="Photo" style="margin:20px 20px 0 20px; height: 167px; width: 116px;"/>
+    </div>
+    <div style="float:right; margin:20px 0 0 20px; width: 222px;">
+        <p id="person_ID" style=" width: 170px; margin-bottom: 15px">ID</p>
+        <p id="person_Name" style=" width: 170px; margin-bottom: 15px">Name</p>
+        <p id="person_Mail" style=" width: 170px; margin-bottom: 15px">Mail</p>
+    </div>
+</div>
+
+</body>
+</html>
